@@ -1,0 +1,34 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.6rem;
+}
+
+.add {
+    border-color: #2f78ff;
+    color: #fff;
+    background: #2f78ff;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.remove {
+    background: #fff;
+    color: #e75151;
+    border-color: #f0cccc;
+}
