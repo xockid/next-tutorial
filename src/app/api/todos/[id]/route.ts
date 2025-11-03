@@ -1,8 +1,5 @@
 import { NextResponse } from "next/server";
 import { store } from "../store";
-import { error } from "console";
-
-type Params = { params: { id: string } };
 
 export async function DELETE(req: Request) {
     const { pathname } = new URL(req.url);

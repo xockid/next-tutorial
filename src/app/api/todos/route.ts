@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { store } from "./store";
-import { error } from "console";
 
 export async function GET() {
     // 캐시 비활성화 (항상 최신 데이터)
