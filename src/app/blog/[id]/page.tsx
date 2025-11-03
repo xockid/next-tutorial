@@ -10,10 +10,12 @@ type Post = {
 export default async function BlogDetailPage({
     params,
 }: {
-    params: { id: string };
+    params: Promise<{ id: string }>;
 }) {
+    const { id } = await params;
+
     const res = await fetch(
-        `https://jsonplaceholder.typicode.com/posts/${params.id}`,
+        `https://jsonplaceholder.typicode.com/posts/${id}`,
         { cache: "no-store" }
     );
     if (!res.ok) {
